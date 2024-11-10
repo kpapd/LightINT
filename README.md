@@ -1,5 +1,12 @@
 # LightINT
-The repository contains the code to implement three distinct In-Band Network Telemetry methods using P4-enabled switches.
+The repository contains the code to implement three distinct In-Band Network Telemetry (INT) methods using P4-enabled switches.
+
+<ul>
+  <li>DLINT: Deterministic Lightweight INT</li>
+  <li>PLINT: Probabilistic Lightweight INT</li>
+  <li>CLINT: Controller-assisted Lightweight INT</li>  
+</ul>
+
 The methods are described in the following two scientific papers. They utilize BMv2 software switch.
 
 https://ieeexplore.ieee.org/document/10206040
