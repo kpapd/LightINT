@@ -436,21 +436,21 @@ class ExerciseRunner:
         print('-------------End of Experiment------------------')
 
         #BTN: Parse output
-        os.system('echo "---s12---" | tee expirament.out')
-        os.system('python3 parsedump.py s12-eth2 10.0.1.1 10.0.1.12 2 '+values+' '+h12pu+' | tee -a expirament.out')
-        os.system('echo "---s3---" | tee -a expirament.out')
-        os.system('python3 parsedump.py s3-eth3 10.0.1.21 10.0.1.3 2 '+values+' '+h03pu+' | tee -a expirament.out')
-        os.system('echo "---s17---" | tee -a expirament.out')
-        os.system('python3 parsedump.py s17-eth3 10.0.1.8 10.0.1.17 2 '+values+' '+h17pu+' | tee -a expirament.out')
-        os.system('echo "---s9---" | tee -a expirament.out')
-        os.system('python3 parsedump.py s9-eth4 10.0.1.18 10.0.1.9 2 '+values+' '+h09pu+' | tee -a expirament.out')
+        os.system('echo "---s12---" | tee experiment.out')
+        os.system('python3 parsedump.py s12-eth2 10.0.1.1 10.0.1.12 2 '+values+' '+h12pu+' | tee -a experiment.out')
+        os.system('echo "---s3---" | tee -a experiment.out')
+        os.system('python3 parsedump.py s3-eth3 10.0.1.21 10.0.1.3 2 '+values+' '+h03pu+' | tee -a experiment.out')
+        os.system('echo "---s17---" | tee -a experiment.out')
+        os.system('python3 parsedump.py s17-eth3 10.0.1.8 10.0.1.17 2 '+values+' '+h17pu+' | tee -a experiment.out')
+        os.system('echo "---s9---" | tee -a experiment.out')
+        os.system('python3 parsedump.py s9-eth4 10.0.1.18 10.0.1.9 2 '+values+' '+h09pu+' | tee -a experiment.out')
         
        
         print('-'*20+'\n') #Print dash line        
        
         #Read and sum Total values of Accurate and Inaccurate paths and found vs lost switch IDs
         
-        outp = open('expirament.out','r')
+        outp = open('experiment.out','r')
 
         acc=0
         inacc=0
