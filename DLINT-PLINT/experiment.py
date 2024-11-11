@@ -397,7 +397,7 @@ class ExerciseRunner:
         
         
         #BTN:1 flow (for testing)
-        host[1].cmdPrint('ITGSend -a 10.0.1.12 -T TCP -rp 10074 -C 10 -c 100 &')
+        host[1].cmdPrint('ITGSend -a 10.0.1.12 -T TCP -rp 10074 -C 20 -c 100 &')
         
 
         print("Running for 60 seconds "+passString)
