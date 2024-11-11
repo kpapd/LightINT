@@ -21,4 +21,4 @@ cp $1val.p4 base.p4
 
 #Compiles a P4 program and outputs p4info.txt (=P4Runtime control plane API description) and base.json (json describing the p4 program)
 p4c-bm2-ss --p4v 16 --p4runtime-files build/base.p4.p4info.txt -o build/base.json base.p4
-python3 ./expirament.py -t topology.json -b simple_switch_grpc -v $1 -s $2 -f $4 -u $3 -r $5
+python3 ./experiment.py -t topology.json -b simple_switch_grpc -v $1 -s $2 -f $4 -u $3 -r $5
