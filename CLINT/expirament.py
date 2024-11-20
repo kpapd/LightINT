@@ -383,10 +383,10 @@ class ExerciseRunner:
 
         os.system('python3 p4_controller.py --p4info ./build/base.p4.p4info.txt --bmv2-json ./build/base.json &') #Launch Controller        
         sleep(8)
-        ans=input('Press key to continue')
+        #ans=input('Press key to continue')
 
         #One flow
-        host[1].cmdPrint('ITGSend -a 10.0.1.12 -T TCP -rp 10074 -C 40 -c 100 &')
+        host[1].cmdPrint('ITGSend -a 10.0.1.12 -T TCP -rp 10074 -C 40 -c 100 -t 60000 &')
         
         #Multiples flows
         #host[1].cmdPrint('ITGSend s1.itg &')   
