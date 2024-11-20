@@ -7,11 +7,11 @@ The repository contains the code to implement three distinct In-Band Network Tel
   <li>CLINT: Controller-assisted Lightweight INT</li>  
 </ul>
 
-The methods are described in the following two scientific papers. They utilize BMv2 software switch.
+The methods are described in the following two scientific papers:
 
-https://ieeexplore.ieee.org/document/10206040
+Papadopoulos, K., Papadimitriou, P., & Papagianni, C. (2023). <b>Deterministic and Probabilistic P4-Enabled Lightweight In-Band Network Telemetry</b>. IEEE Transactions on Network and Service Management. (https://ieeexplore.ieee.org/document/10206040)
 
-https://ieeexplore.ieee.org/document/10493019
+Papadopoulos, K., & Papadimitriou, P. (2024). <b>CLINT: Controller-Assisted Lightweight In-Band Network Telemetry. IEEE Access.</b> (https://ieeexplore.ieee.org/document/10493019)
 
 # Installation
 
@@ -24,7 +24,7 @@ Open a terminal and issue the following commands. Keep the directory structure.
   <li>sudo apt upgrade</li>
   <li>sudo apt install git</li>
   <li>git clone https://github.com/jafingerhut/p4-guide.git</li>
-  <li>./p4-guide/bin/install-p4dev-v5.sh (This should take some minutes)</li>
+  <li>./p4-guide/bin/install-p4dev-v5.sh #(This should take some minutes)</li>
   <li>sudo apt install d-itg</li>
   <li>git clone https://github.com/p4lang/tutorials.git</li>
   <li>cd tutorials</li>
@@ -35,7 +35,9 @@ Open a terminal and issue the following commands. Keep the directory structure.
 
 # Use
 
-The program simulates a network in Mininet with 27 nodes.
+# DLINT
+
+The program simulates a network in Mininet with 27 nodes using BMv2 P4 software switch.
 
 <img src="./DLINT-PLINT/BTN.jpg">
 
@@ -58,8 +60,25 @@ runexp [type&TelValuesPerPacket=dlintX/plintX] [referenceLabel=X] [puthUpdate=0/
   <li>PU time: The time where the path update takes place (applicable when pathUpdate=1)</li>
 </ul>
 
-The experiment runs for 60 seconds.
+The experiment runs for 60 seconds and outputs overall statistics.
 
+To trigger multiple flows in more paths, comment out the corresponding lines of code starting with "#BTN", in experiment.py
+
+The following command will trigger a path update in all paths, in the 30th second:
+
+<ul>
+  <li>sudo bash runexp.sh dlint1 1/1 1 3281 30</li>
+</ul>
+
+# PLINT
+
+To launch a PLINT experiment issue the following:
+
+<ul>
+  <li>sudo bash runexp.sh plint1 1/1 0 3281 30</li>
+</ul>
+
+bfSize parameter (3821) doesn't apply in this case.
 
 
 
