@@ -151,6 +151,7 @@ def initSwitches(p4info_helper, bmv2_file_path):
         #Initiate tables, upload p4 program, initialize identify table
         for i in range(1,28):
             s[i].MasterArbitrationUpdate()
+            sleep(0.5)
             s[i].SetForwardingPipelineConfig(p4info=p4info_helper.p4info, bmv2_json_file_path=bmv2_file_path)
             table_entry = p4info_helper.buildTableEntry(
                     table_name="MyIngress.identify",
