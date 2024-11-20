@@ -15,7 +15,7 @@ Papadopoulos, K., & Papadimitriou, P. (2024). <b>CLINT: Controller-Assisted Ligh
 
 # Installation
 
-To install you need a fresh instance of Ubuntu 20. A desktop version would be prefferable since GUI tools (such as Wireshark) can be used.
+To install you need a fresh instance of Ubuntu 20. A desktop version is preferable so that GUI tools (such as Wireshark) can be used.
 
 Open a terminal and issue the following commands. Keep the directory structure.
 
@@ -104,7 +104,9 @@ bfSize in this case is the size of the register Array.
 
 Running experiments with multiple flows requires more CPU and memory resources. Use with caution with respect to the underlying hardware. TCP flow rate should also be considered.
 
-The compiled version of BMv2 used in this repository is not optimized for performance rather than for educational and testing purposes. Better performace can be achieved by compiling BMv2 with parameters optimized for performance.
+The compiled version of BMv2 used in this repository is not optimized for performance rather than for educational and testing purposes. Better performance can be achieved by compiling BMv2 with parameters optimized for performance.
+
+We are thankfull to the creators and contributors of the following repositories: jafingerhut/p4-guide, p4lang/behavioral-model, p4lang/tutorials, where more information can be found.
 
 
 
