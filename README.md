@@ -80,6 +80,34 @@ To launch a PLINT experiment issue the following:
 
 bfSize parameter (3821) doesn't apply in this case.
 
+To add a path update in the 30th second:
+
+<ul>
+  <li>sudo bash runexp.sh plint1 1/1 0 3281 30</li>
+</ul>
+
+# CLINT
+
+CLINT uses a controller to coordinate switches.
+
+The following commands will start an experiment without and with a path update:
+
+<ul>
+  <li>cd LightINT/CLINT</li>
+  <li>sudo sh runexp.sh clint1 100% 0 4081</li>
+  <li>sudo sh runexp.sh clint1 100% 1 4081</li>
+</ul>
+
+bfSize in this case is the size of the register Array.
+
+# Notes
+
+Running experiments with multiple flows requires more CPU and memory resources. Use with caution with respect to the underlying hardware. TCP flow rate should also be considered.
+
+The compiled version of BMv2 used in this repository is not optimized for performance rather than for educational and testing purposes. Better performace can be achieved by compiling BMv2 with parameters optimized for performance.
+
+
+
 
 
 
