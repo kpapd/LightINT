@@ -106,7 +106,7 @@ Running experiments with multiple flows requires more CPU and memory resources. 
 
 The compiled version of BMv2 used in this repository is not optimized for performance rather than for educational and testing purposes. Better performance can be achieved by compiling BMv2 with parameters optimized for performance.
 
-We are thankfull to the creators and contributors of the following repositories: jafingerhut/p4-guide, p4lang/behavioral-model, p4lang/tutorials, where more information can be found.
+We are thankful to the creators and contributors of the following repositories: jafingerhut/p4-guide, p4lang/behavioral-model, p4lang/tutorials, where more information can be found.
 
 
 
