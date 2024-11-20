@@ -381,8 +381,9 @@ class ExerciseRunner:
         host[17].cmdPrint('ITGRecv &')
         host[9].cmdPrint('ITGRecv &')
 
+        print('Launching Controller...')
         os.system('python3 p4_controller.py --p4info ./build/base.p4.p4info.txt --bmv2-json ./build/base.json &') #Launch Controller        
-        sleep(8)
+        sleep(20)
         #ans=input('Press key to continue')
 
         #One flow
